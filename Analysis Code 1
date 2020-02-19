@@ -1,0 +1,10 @@
+# Filtering and displaying the property names and their property id’s for Owner Id- '1426'
+
+SELECT  OP.PropertyId, P.Name, OP.OwnerId
+FROM Property AS P
+INNER JOIN OwnerProperty AS OP ON P.Id=OP.Id
+WHERE OwnerId=1426
+
+# Selected the PropertyId and Name from Property Table and OwnerId from OwnerProperty Table
+# Performed Inner join of Property Table on Owner property Table based on ID column in both tables
+# Filtered result only for the Owner whose ID is 1426.
